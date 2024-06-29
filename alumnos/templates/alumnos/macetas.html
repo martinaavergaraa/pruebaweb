@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/macetas.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Maceteros</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            
+        <div class="container-fluid">
+            <!-- Navbar -->
+            <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'registro' %}">Registrarse</a>
+            <!-- Navbar Toggler para dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Elementos de navegación -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'planta' %}">Plantas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'tierra' %}">Tierras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'macetas' %}">Maceteros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-disabled="page" href="{% url 'contacto' %}">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-disabled="page" href=" {% url 'testimonios' %}">Testimonios</a>
+                        
+                    </li>
+                </ul>
+        </nav>
+    <div class="container">
+        <div class="item">
+            <img src="{% static 'img/macetaaaa.jpg' %}" alt="Descripción de la imagen 1" class="imagen-galeria" style="width: 300px;">
+            <h3 class="titulo">ECO-ROSTRO</h3>
+            <p class="descripcion">"Maceta única con la mitad de un rostro dibujado y la otra mitad adornada con exuberantes plantas,
+                fusionando lo humano y natural en una sola obra de arte."</p>
+            <p class="precio">$10.000</p>
+            <button class="agregar-carrito" onclick="agregarAlCarrito('ECO-ROSTRO', 10000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'img/macetaaaa.webp' %}" alt="Descripción de la imagen 2" class="imagen-galeria" style="width: 300px;">
+            <h3 class="titulo">NATURALEZA ENCARNADA</h3>
+            <p class="descripcion">"Una maceta con forma de rostro humano con cabello de plantas, sosteniendo otra maceta,
+                simbolizando la unión entre la humanidad y la naturaleza."</p>
+            <p class="precio">$15.000</p>
+            <button class="agregar-carrito" onclick="agregarAlCarrito('NATURALEZA ENCARNADA', 15000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'img/macetas.jpg' %}" alt="Descripción de la imagen 3" class="imagen-galeria" style="width: 300px;">
+            <h3 class="titulo">SONRISA DEL MAR: PULPO VERDE</h3>
+            <p class="descripcion">"Maceta con forma de pulpo sonriente, lista para dar un abrazo vegetal a tus plantas favoritas.
+                Sus tentáculos dan la bienvenida a un oasis de verdor a tu hogar."</p>
+            <p class="precio">$20.000</p>
+            <button class="agregar-carrito" onclick="agregarAlCarrito('SONRISA DEL MAR: PULPO VERDE', 20000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'img/macetas.webp' %}" alt="Descripción de la imagen 4" class="imagen-galeria" style="width: 300px;">
+            <h3 class="titulo">CONEXIÓN VERDE: MACETAS GEMELAS</h3>
+            <p class="descripcion">"Dos macetas con forma humana, una blanca y otra negra. Unidas por un propósito en común:
+                El cultivo de la vida. Representan la dualidad de la naturaleza y la armonía de la diversidad."</p>
+            <p class="precio">$25.000</p>
+            <button class="agregar-carrito" onclick="agregarAlCarrito('CONEXIÓN VERDE: MACETAS GEMELAS', 25000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'img/macetita.jpg' %}" alt="Descripción de la imagen 5" class="imagen-galeria" style="width: 300px;">
+            <h3 class="titulo">VERDE SONRIENTE: CAPARAZÓN DE VIDA</h3>
+            <p class="descripcion">"Maceta con forma de tortuga sonriente, donde su caparazón alberga un jardín vibrante de plantas,
+                añadiendo una dosis de alegría y naturaleza a cualquier lugar."</p>
+            <p class="precio">$30.000</p>
+            <button class="agregar-carrito" onclick="agregarAlCarrito('VERDE SONRIENTE: CAPARAZÓN DE VIDA', 30000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'img/macetotas.jpg' %}" alt="Descripción de la imagen 6" class="imagen-galeria" style="width: 300px;">
+            <h3 class="titulo">ELEGANCIA TRIDIMENSIONAL: MACETEROS BLANCO Y NEGRO</h3>
+            <p class="descripcion">"Estilizados y modernos, estos maceteros realzan tus plantas con elegancia, añadiendo un toque
+                de sofisticación a tu hogar o jardín."</p>
+            <p class="precio">$35.000</p>
+            <button class="agregar-carrito" onclick="agregarAlCarrito('ELEGANCIA TRIDIMENSIONAL: MACETEROS BLANCO', 35000)">Agregar al Carrito</button>
+
+            <script>
+                function agregarAlCarrito(nombre, precio) {
+                    alert("¡Producto agregado al carrito con éxito!");
+                }
+            </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          

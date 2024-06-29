@@ -1,0 +1,41 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Gris claro para el fondo */
+    color: #333; /* Color principal del texto */
+}
+
+h1, h2 {
+    color: #4caf50; /* Verde para los títulos */
+    text-align: center;
+}
+
+/* Estilos específicos */
+.form-label {
+    color: #555; /* Gris oscuro para las etiquetas de formulario */
+}
+
+.btn-primary {
+    background-color: #388e3c; /* Verde más oscuro para los botones principales */
+    border-color: #388e3c;
+}
+
+.btn-primary:hover {
+    background-color: #2e7d32; /* Verde más oscuro al pasar el ratón sobre los botones principales */
+    border-color: #2e7d32;
+}
+
+.mensaje-bienvenida {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #009688;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    animation: aparecer 1s ease-in-out;
+}
+
+@keyframes aparecer {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

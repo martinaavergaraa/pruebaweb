@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d4edd9; /* Verde claro */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: #468966; /* Verde oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+#nuevo-producto, #carrito {
+    margin-bottom: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    font-weight: bold;
+    color: #468966;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #77b28c; /* Verde más oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #5e8c6a; /* Verde más oscuro al hacer hover */
+}
+#lista-productos {
+    list-style-type: none;
+    padding: 0;
+}
+#lista-productos li {
+    background-color: #e4f1d4; /* Verde claro */
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #c7d6bc; /* Verde claro más oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+#lista-productos li:hover {
+    background-color: #d4e4bf; /* Verde claro más oscuro al hacer hover */
+}
+#total-carrito {
+    text-align: right;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#metodos-pago {
+    text-align: center;
+}
+.eliminar-producto {
+    background-color: #ff4545; /* Rojo */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.eliminar-producto:hover {
+    background-color: #e04141; /* Rojo más oscuro al hacer hover */
+}
+img {
+    margin: 10px;
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}

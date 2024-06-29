@@ -1,0 +1,31 @@
+  /* Estilos personalizados */
+        /* Encabezado */
+        header {
+            background-color: #2ecc71; /* Verde esmeralda */
+            color: #fff; /* Texto blanco */
+            padding: 20px; /* Espaciado interno */
+            text-align: center; /* Alineación centrada */
+            font-family: 'Arial', sans-serif; /* Fuente */
+        }
+
+        /* Contenedor */
+        .container {
+            margin-top: 20px; /* Espacio superior */
+            padding: 20px; /* Espaciado interno */
+            background-color: #ecf0f1; /* Gris claro */
+            border-radius: 8px; /* Bordes redondeados */
+            font-family: 'Arial', sans-serif; /* Fuente */
+            font-size: 16px; /* Tamaño de fuente */
+            line-height: 1.6; /* Altura de línea */
+            color: #333; /* Texto oscuro */
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2ecc71; /* Verde esmeralda */
+            color: #fff; /* Texto blanco */
+            padding: 20px; /* Espaciado interno */
+            text-align: center; /* Alineación centrada */
+            margin-top: 20px; /* Espacio superior */
+            font-family: 'Arial', sans-serif; /* Fuente */
+        }

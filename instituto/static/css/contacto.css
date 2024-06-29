@@ -1,0 +1,16 @@
+
+/* Estilos adicionales */
+.form-group {
+margin-bottom: 20px; /* Agrega espacio entre los grupos de formulario */
+}
+.form-control {
+height: 50px; /* Aumenta la altura de los campos de entrada */
+font-size: 16px; /* Aumenta el tamaño de la fuente */
+}
+textarea.form-control {
+height: 150px; /* Aumenta la altura del área de texto */
+}
+.btn-primary {
+height: 50px; /* Aumenta la altura del botón */
+font-size: 18px; /* Aumenta el tamaño de la fuente del botón */
+}

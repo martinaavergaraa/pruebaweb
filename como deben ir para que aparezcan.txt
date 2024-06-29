@@ -1,0 +1,8 @@
+http://127.0.0.1:8000/alumnos/index/ = index
+http://127.0.0.1:8000/registro/ = registro
+http://127.0.0.1:8000/macetas/ = macetas
+http://127.0.0.1:8000/testimonios/ = testimonios 
+http://127.0.0.1:8000/contacto/ = contacto
+http://127.0.0.1:8000/tierra/ = tierra
+http://127.0.0.1:8000/politicas/ = politicas
+http://127.0.0.1:8000/planta/ = planta 

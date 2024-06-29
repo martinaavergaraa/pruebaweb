@@ -1,0 +1,42 @@
+/* Estilos personalizados */
+.container {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* styles.css */
+
+body {
+    background-color: rgb(139, 69, 19); /* Color café en RGB */
+    color: #fff; /* Color del texto, blanco en este caso */
+}
+body {
+    background-color: saddlebrown; /* Nombre del color café en CSS */
+    color: #fff; /* Color del texto, blanco en este caso */
+}
+
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#carrito {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#contenido-carrito {
+    font-size: 18px;
+}
+
+
+
